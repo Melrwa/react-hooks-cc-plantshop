@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Beauty Queen",
+      "image": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731159503/ficuselasticaburgundy4figandfreya_ceac6ad8-ef53-4ac4-aff7-fe77b5e01382_bqes3l.png",
+      "price": 20,
+      "id": 9
+    },
+    {
+      "name": "Hanging Lilies",
+      "image": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731159503/House_vining_plants-1131736_mkcs3e.webp",
+      "price": 15.23,
+      "id": 10
     }
   ]
 }

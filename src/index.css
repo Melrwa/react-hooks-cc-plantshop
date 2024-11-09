@@ -23,8 +23,12 @@ button {
   cursor: pointer;
 }
 
-button.primary {
+.primary-button {
   background-color: var(--green);
+  color: white;
+}
+.sold-out-button {
+  background-color: rgb(228, 223, 223);
   color: white;
 }
 
