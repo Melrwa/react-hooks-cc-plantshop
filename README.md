@@ -1,150 +1,99 @@
-# Phase 2 Code Challenge: Plantsy
 
-## Demo
 
-Use this gif as an example of how the app should work.
+# Plantsy
+## Overview
 
-![Demo GIF](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-mock-code-challenge-plantshop/plantsy_demo.gif)
+This is a simple admin side  plant management application built with React that allows users to:
+- Add a new plant
+- Update the price of an existing plant
+- Delete a plant
+- Search through the plant list
 
-## Instructions
+The app communicates with a server running locally at `http://localhost:6001` and provides interactive alerts to notify users about the success or failure of each operation.
 
-Welcome to Plantsy! You've been tasked with building out some features for the
-admin side of a plant store. The designers have put together the components and
-CSS. Now it's up to you to bring the features to life by adding stateful logic
-as well as persisting data to the backend via our API.
+## Features
 
-Your job will be to make our app work according to the user stories you will
-find the [Core Deliverables](#Core-Deliverables) section.
+- **Add Plant**: Add a new plant to the list.
+- **Update Plant**: Update the price of an existing plant.
+- **Delete Plant**: Delete a plant after confirming the action.
+- **Search**: Search for plants by name.
+- **Error Handling**: Alerts are displayed if a plant is not found or a failed operation occurs.
 
-## Setup
+## Getting Started
 
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `6001`.
-3. In a new terminal, run `npm start`.
+To get started with this project locally, follow the instructions below.
 
-Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
-in the browser to verify that your backend is working before you proceed!
+### Prerequisites
 
-## Endpoints
+Make sure you have `Node.js` and `npm` installed on your machine.
 
-The base URL for your backend is: `http://localhost:6001`
+### Installation
 
-## Core Deliverables
+1. Clone the repository to your local machine:
 
-As a user:
+   ```bash
+   git clone <repository-url>
+   ```
 
-1. When the app starts, I can see all plants.
-2. I can add a new plant to the page by submitting the form.
-3. I can mark a plant as "sold out".
-4. I can search for plants by their name and see a filtered list of plants.
+2. Navigate to the project folder:
 
-### Endpoints for Core Deliverables
+   ```bash
+   cd <project-folder>
+   ```
 
-#### GET /plants
+3. Install dependencies:
 
-Example Response:
+   ```bash
+   npm install
+   ```
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Aloe",
-    "image": "./images/aloe.jpg",
-    "price": 15.99
-  },
-  {
-    "id": 2,
-    "name": "ZZ Plant",
-    "image": "./images/zz-plant.jpg",
-    "price": 25.98
-  }
-]
-```
+### Running the App
 
-#### POST `/plants`
+1. Start the server (assuming you have a backend running on `localhost:6001`):
 
-Required Headers:
+   ```bash
+   npm start
+   ```
 
-```js
-{
-  "Content-Type": "application/json"
-}
-```
+2. Open the app in your browser at:
 
-Request Object:
+   ```
+   http://localhost:3000
+   ```
 
-```json
-{
-  "name": "string",
-  "image": "string",
-  "price": number
-}
-```
+   The app will now be running on port `3000`, while the server runs on `localhost:6001`.
 
-Example Response:
+## Live Link
 
-```json
-{
-  "id": 1,
-  "name": "Aloe",
-  "image": "./images/aloe.jpg",
-  "price": 15.99
-}
-```
+Once deployed, you can view the live version of the app at the following URL:
 
-## Advanced Deliverables
+[Live Link Placeholder](<your-live-app-link>)
 
-These deliverables are not required to pass the code challenge, but if you have
-the extra time, or even after the code challenge, they are a great way to
-stretch your skills.
+*Note: Modify this section with the actual link once the app is live.*
 
-You'll have to add additional elements for these features. Feel free to style
-them however you see fit!
+## Functions
 
-> Note: If you are going to attempt these advanced deliverables, please be sure
-> to have a working commit with all the Core Deliverables first!
+### `addPlant(newPlant)`
+- **Description**: Adds a new plant to the list if it does not already exist.
+- **Alert**: "Plant added successfully" or "Error: Plant already exists."
 
-As a user:
+### `updatePlant(updatedPlant)`
+- **Description**: Updates the price of an existing plant.
+- **Alert**: "Plant price updated successfully" or "Error: Plant not found or price update failed."
 
-1. I can update the price of a plant and still see the updated price after
-   refreshing the page.
-2. I can delete a plant and it is still gone when I refresh the page.
+### `deletePlant(id)`
+- **Description**: Deletes a plant after confirming the action with the user.
+- **Alert**: "Plant deleted successfully" or "Error: Plant not found or delete failed."
 
-### Endpoints for Advanced Deliverables
+### `handleSearchChange(query)`
+- **Description**: Filters plants by name based on the search query entered by the user.
 
-#### PATCH /plants/:id
+## Contributing
 
-Required Headers:
+Feel free to fork the project and create a pull request if you would like to contribute. Any improvements or suggestions are welcome!
 
-```js
-{
-  "Content-Type": "application/json"
-}
-```
+## License
 
-Request Object:
+This project is open-source and available under the MIT License.
 
-```json
-{
-  "price": number
-}
-```
-
-Example Response:
-
-```json
-{
-  "id": 1,
-  "name": "Aloe",
-  "image": "./images/aloe.jpg",
-  "price": 16.99
-}
-```
-
-#### DELETE /plants/:id
-
-Example Response:
-
-```json
-{}
-```
+---
