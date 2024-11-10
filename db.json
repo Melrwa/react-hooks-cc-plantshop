@@ -19,12 +19,6 @@
       "price": 7.99
     },
     {
-      "id": 4,
-      "name": "Pothos",
-      "image": "./images/pothos.jpg",
-      "price": 23
-    },
-    {
       "id": 5,
       "name": "Jade",
       "image": "./images/jade.jpg",
