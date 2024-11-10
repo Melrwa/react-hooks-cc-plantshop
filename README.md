@@ -67,7 +67,7 @@ Make sure you have `Node.js` and `npm` installed on your machine.
 
 Once deployed, you can view the live version of the app at the following URL:
 
-[Live Link Placeholder](<your-live-app-link>)
+[Plantsy](<https://react-hooks-cc-plantshop-sigma.vercel.app/>)
 
 *Note: Modify this section with the actual link once the app is live.*
 
