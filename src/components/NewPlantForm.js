@@ -10,7 +10,11 @@ function NewPlantForm({ onAddPlant }) {
   // Handle form submission to create a new plant
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevents the default form submission behavior
-
+    // Check if all fields are filled
+  if (!name || !image || !price) {
+    alert("All fields are required!");
+    return; // Prevent form submission if any field is empty
+  }
     // Create a new plant object from the form values
     const newPlant = { name, image, price: parseFloat(price) };
 
