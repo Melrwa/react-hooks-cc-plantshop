@@ -44,12 +44,6 @@
     },
     {
       "name": "Beauty Queen",
-      "image": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731159503/House_vining_plants-1131736_mkcs3e.webp",
-      "price": 22,
-      "id": 8
-    },
-    {
-      "name": "Beauty Queen",
       "image": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731159503/ficuselasticaburgundy4figandfreya_ceac6ad8-ef53-4ac4-aff7-fe77b5e01382_bqes3l.png",
       "price": 28,
       "id": 9
@@ -57,7 +51,7 @@
     {
       "name": "Cacti",
       "image": "https://res.cloudinary.com/dmnytetf0/image/upload/v1731247062/angel-wings-cactus-ab159de1fa074df592d01d4d6799d7c9_aq8s6u.jpg",
-      "price": 32,
+      "price": 21,
       "id": 10
     }
   ]
