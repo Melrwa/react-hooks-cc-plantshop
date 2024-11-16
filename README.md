@@ -32,13 +32,13 @@ Make sure you have `Node.js` and `npm` installed on your machine.
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Melrwa/react-hooks-cc-plantshop.git>
    ```
 
 2. Navigate to the project folder:
 
    ```bash
-   cd <project-folder>
+   cd <react-hooks-cc-plantshop>
    ```
 
 3. Install dependencies:
